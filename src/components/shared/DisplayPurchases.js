@@ -12,7 +12,7 @@ class DisplayPurchases extends Component {
               <div className="card mb-2" key={purchase.id}>
                 <div className="card-body">
                   ${purchase.price} for {purchase.description} <strong>({purchase.category})</strong>
-                  <button onClick={() => this.props.removePurchase(purchase.id)} className='btn btn-sm btn-danger' id='delete-btn'>X</button>
+                  <button onClick={() => this.props.deletePurchase(purchase.id)} className='btn btn-sm btn-danger' id='delete-btn'>X</button>
                 </div>
               </div>
             )
